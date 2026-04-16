@@ -1,157 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background: #0f172a;
-    color: white;
-}
-
-/* BOTÓN (sin animaciones) */
-.btn {
-    background: #3b82f6;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-/* NAV */
-nav {
-    background: #1e293b;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* HERO (solo uno, limpio) */
 .hero {
-    width: 100%;
-    height: 100vh;
-
-    background-image: url("../img/publicarray-programming-1009134_1920.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-/* overlay oscuro */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
-}
-
-/* 👇 importante para que el texto quede encima */
-.hero * {
-    position: relative;
-}
-
-.hero h2 {
-    font-size: 45px;
-    margin-bottom: 20px;
-    color: #16a34a;
-}
-
-.hero p {
-    font-size: 20px;
-    max-width: 600px;
-    margin-bottom: 25px;
-}
-
-/* BENEFICIOS */
-.beneficios {
-    padding: 60px 20px;
-    text-align: center;
-    background: #f8fafc;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    width: 260px;
-}
-
-/* AGENDA */
-.agenda {
-    padding: 60px 20px;
-    background: linear-gradient(to right, #3b82f6, #06b6d4);
-    color: white;
-    text-align: center;
-}
-
-.agenda ul {
-    list-style: none;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* REGISTRO */
-.registro {
-    padding: 60px 20px;
-    text-align: center;
-    background: #f1f5f9;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 350px;
-    margin: auto;
-}
-
-input, button {
-    padding: 12px;
-    border-radius: 6px;
-}
-
-button {
-    background: #22c55e;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* FOOTER */
-footer {
-    background: #0f172a;
-    color: white;
-    text-align: center;
+    
+    height: 100vh;
     padding: 20px;
+
+    background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("../img/publicarray-programming-1009134_1920.jpg");
+
+    background-size: cover;       /* ajusta bien la imagen */
+    background-position: center;  /* centra la imagen */
+    background-repeat: no-repeat; /* evita repetición */
+
+    text-align: center;
+    color: white;
 }
